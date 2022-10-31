@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javscript session 1</title>
+    <style>
+        /* table tr:nth-child(odd) td{
+            background-color: black;
+            color: white                        ;
+} */
+/* table tr:nth-child(even) td{
+} */
+    </style>
+</head>
+<body>
+
+
+    <script>
+
+    //  var inp1= parseInt(prompt("Enter number 1"));
+    //  var inp2= parseInt(prompt("Enter number 2"));
+
+    //  var mul = inp1*inp2;
+    //  var add = inp1+inp2;
+    //  var divide = inp1/inp2;
+    //  var sub = inp1-inp2;
+    //  document.write("multiplication is"+mul +typeof(mul)+ "<br> "+"addition is " +add +typeof(add) +"<br>"+ "divide is " + divide +typeof(divide)+"<br> "+"subtarction is " +sub+typeof(sub));
+
+
+    // var f = parseFloat(prompt("Enter number 1"));
+    // var f2 =parseFloat(prompt("Enter number 2"));
+    // var res = f+f2;
+    // document.write(res);
+
+    // var f = 30.4;
+    // var e = 3;
+    // var res = f/e;
+    // document.write(res.toFixed(2));
+
+    // var inp1 = prompt("enter number1");
+    // var inp2 = prompt("enter 2");
+    // var res = eval(inp1*inp2);
+    // document.write(res);
+    </script>
+
+    <input type="number" name="" id="inp">
+    <button type="submit" onclick="fun()">submit</button>
+
+    <table border="1">
+        <tbody style="">
+
+        </tbody>
+    </table>
+    <script>
+        function fun(){
+
+       
+var inp = document.getElementById("inp").value;
+var ab= document.querySelector("tbody");
+var kinza= document.querySelector("tr");
+
+    for(var i = 1 ; i<=inp; i++){
+     
+     ab.innerHTML += "<td>"+inp+"</td>"+"<td>"+"*"+"</td>"+"<td>"+i+"</td>"+"<td>"+i*inp+"</td>";
+       
+document.getElementById("inp").value=""
+}
+
+for(var l =1; l<=10; l++){
+    if(l%2==0) 
+    {kinza.style.backgroundColor="red"+l};  
+}
+}
+    </script>
+</body>
+</html>

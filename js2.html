@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="checkbox" value="pakistan">
+        <input type="checkbox" value="turkey">
+        <input type="checkbox" value="iran">
+        <input type="checkbox" value="saudi arab">
+        <input type="submit" value="submit" id="btn">
+    </form>
+    <p></p>
+    <script>
+        $(document).ready(function(){
+           $("#btn").click(function(){
+            var res = $("input[type='checkbox']:checked<br/>");
+            if(res.length>0){
+                var res_val = res.length+"checkboxe(s)checked"
+            }
+            
+           })
+        })
+    </script>
+</body>
+</html>

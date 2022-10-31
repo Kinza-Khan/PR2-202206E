@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <label for="">Enter Designation</label>
+    <input type="text" name="" id="d">
+    <br><br>
+    <button type="submit" onclick="sub()">Submit</button>
+    <div class="" id="main"></div>
+    <script>
+//         function sub(){
+// var desg = document.getElementById("d").value;
+// switch (desg) {
+//     case 'manager':
+//         document.getElementById("main").innerHTML="your salary is 60000";
+//         break;
+//         case 'doctor':
+//         document.getElementById("main").innerHTML="your salary is 120000";
+//         break;
+//         case 'professor':
+//         document.getElementById("main").innerHTML="your salary is 80000";
+//         break;
+
+//     default:
+   
+//         document.getElementById("main").innerHTML="enter proper designation";
+//         break;
+//         break;
+// }
+
+
+
+//         }
+function sub(){
+var desg = document.getElementById("d").value;
+switch (true) {
+    case (desg>=80):
+        document.getElementById("main").innerHTML="A+";
+        break;
+        case (desg>=70):
+        document.getElementById("main").innerHTML="A";
+        break;
+        case (desg>=60):
+        document.getElementById("main").innerHTML="B";
+        break;
+        case (desg>=50):
+        document.getElementById("main").innerHTML="C";
+        break;
+
+    default:
+   
+        document.getElementById("main").innerHTML="Fail";
+        break;
+    
+}
+
+
+
+        }
+    </script>
+</body>
+</html>
